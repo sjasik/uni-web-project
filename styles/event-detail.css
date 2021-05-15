@@ -1,0 +1,140 @@
+/* Page hero */
+.page-hero {
+  min-height: 600px;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-hero .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-hero h1.title {
+  font-size: 72px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.page-hero h4.subtitle {
+  color: white;
+}
+
+/* Responsive images/videos */
+.event-detail img,
+.event-detail video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Event detail */
+.event-detail section {
+  text-align: left;
+  color: var(--gray-color);
+  padding-bottom: 0;
+}
+
+.event-detail .inline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.event-detail .inline .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.event-detail .inline .icons div {
+  display: flex;
+  flex-direction: row;
+  margin-right: 24px;
+}
+
+.event-detail .inline img {
+  margin-right: 4px;
+}
+
+.event-detail .inline .buttons button {
+  cursor: pointer;
+  padding: 16px 24px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--orange-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+}
+
+.event-detail .inline .buttons button:first-of-type {
+  background-color: var(--blue-color);
+}
+
+.event-detail p {
+  margin-bottom: 16px;
+}
+
+.event-detail img {
+  margin-bottom: 16px;
+}
+
+.event-detail .twoside {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 64px;
+  margin-bottom: 64px;
+}
+
+.event-detail .twoside > div {
+  grid-column: span 1;
+}
+
+.event-detail .twoside > img {
+  grid-column: span 1;
+}
+
+.event-detail .twoside ul {
+  list-style: none;
+}
+
+.event-detail .twoside ul li {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+}
+
+.event-detail .twoside ul li img {
+  margin-right: 8px;
+}
+
+.event-detail .twoside img {
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .event-detail .inline {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .event-detail .inline .icons {
+    margin-bottom: 16px;
+  }
+  .event-detail .twoside {
+    gap: 24px;
+  }
+  .event-detail .twoside > div {
+    grid-column: span 2;
+  }
+  .event-detail .twoside > img {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 576px) {
+}

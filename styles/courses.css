@@ -1,0 +1,95 @@
+/* Page hero */
+.page-hero {
+  min-height: 600px;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-hero .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-hero h1.title {
+  font-size: 72px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.page-hero h4.subtitle {
+  color: white;
+}
+
+/* Courses */
+.row.courses {
+  background-color: white;
+}
+
+.courses .tabs {
+  margin-bottom: 24px;
+}
+
+.courses .tabs ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.courses .tabs ul li {
+  font-weight: bold;
+  padding: 24px;
+}
+
+.courses .tabs ul li a {
+  color: var(--dark-blue-color);
+  text-decoration: none;
+}
+
+.courses .tabs ul li a.pill {
+  color: white;
+}
+
+.courses .cards {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.courses .cards .card {
+  grid-column: span 1;
+  border: 1px solid var(--light-gray-color);
+}
+
+.courses .cards .card .image {
+  position: relative;
+}
+
+.courses .cards .card .image .price {
+  height: 48px;
+  width: 48px;
+  border-radius: 24px;
+  line-height: 48px;
+  background-color: var(--orange-color);
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  bottom: -24px;
+  right: 24px;
+}
+
+.courses .cards .card .description .pill {
+  background-color: #3662ff;
+}
+
+@media (max-width: 992px) {
+  .courses .cards .card {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 576px) {
+  .courses .cards .card {
+    grid-column: span 4;
+  }
+}

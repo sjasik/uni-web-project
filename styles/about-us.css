@@ -1,0 +1,260 @@
+/* Page hero */
+.page-hero {
+  min-height: 600px;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-hero .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-hero h1.title {
+  font-size: 72px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.page-hero h4.subtitle {
+  color: white;
+}
+
+/* Introduction */
+.introduction {
+  position: relative;
+}
+
+.introduction section {
+  padding-bottom: 128px;
+}
+
+.introduction .twosides {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 64px;
+}
+
+.introduction .twosides .photos {
+  grid-column: span 1;
+  position: relative;
+}
+
+.introduction .twosides .photos img:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+}
+
+.introduction .twosides .photos img:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+}
+
+.introduction .twosides .photos .label {
+  position: absolute;
+  background-color: var(--orange-color);
+  color: white;
+  width: 128px;
+  height: 128px;
+  border-radius: 64px;
+  bottom: 45%;
+  right: 45%;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 8px 8px 0px 0px white;
+}
+
+.introduction .twosides .photos .label div {
+  margin-top: 16px;
+}
+
+.introduction .twosides .photos .label span {
+  font-size: 32px;
+}
+
+.introduction .twosides .career {
+  grid-column: span 1;
+  text-align: left;
+  color: var(--gray-color);
+}
+
+.introduction .twosides .career p:first {
+  border-left: 4px solid var(--orange-color);
+  padding-left: 16px;
+}
+
+.introduction .twosides .career .icons {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.introduction .twosides .career .icons > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.introduction .twosides .career .icons hr {
+  width: 75%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.introduction .twosides .career .icons img {
+  margin-right: 16px;
+}
+
+.introduction .twosides .career .icons h3 {
+  color: var(--dark-blue-color);
+  margin-bottom: 8px;
+}
+
+.introduction .twosides .career .cta button {
+  margin-top: 24px;
+  cursor: pointer;
+  padding: 16px 24px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--orange-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+}
+
+.introduction .twosides .career .cta button:nth-child(2) {
+  color: var(--dark-blue-color);
+  background-color: white;
+}
+
+@media (max-width: 992px) {
+  .introduction .twosides .photos {
+    display: none;
+  }
+  .introduction .twosides .career {
+    grid-column: span 2;
+  }
+}
+
+.introduction .cards {
+  position: absolute;
+  bottom: -64px;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.introduction .cards .card {
+  grid-column: span 1;
+  height: 128px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-color);
+  box-shadow: 0 4px 8px 0 rgb(6 42 54 / 10%), 0 6px 20px 0 rgb(6 42 54 / 10%);
+}
+
+.introduction .cards .card img {
+  height: 48px;
+  width: auto;
+  margin-right: 8px;
+}
+
+.introduction .cards .card p span {
+  color: var(--orange-color);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  .introduction .cards {
+    display: none;
+  }
+  .introduction section {
+    padding-bottom: 64px;
+  }
+}
+
+/* Who we are */
+.row.who-we-are {
+  background-color: var(--light-blue-color);
+}
+
+.who-we-are section {
+  padding-top: 128px;
+}
+
+.who-we-are .twosides {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.who-we-are .twosides .goals {
+  grid-column: span 1;
+  text-align: left;
+  color: var(--gray-color);
+}
+
+.who-we-are .twosides .goals .charts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 24px;
+}
+
+.who-we-are .twosides .goals .charts div:first-child {
+  margin-right: 24px;
+}
+
+.who-we-are .twosides .goals .charts div h3 {
+  color: var(--dark-blue-color);
+}
+
+.who-we-are .twosides .video {
+  grid-column: span 1;
+}
+
+.who-we-are .twosides .video video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .who-we-are section {
+    padding-top: 64px;
+  }
+  .who-we-are .twosides .goals {
+    grid-column: span 2;
+  }
+  .who-we-are .twosides .video {
+    grid-column: span 2;
+  }
+}
+
+/* Instructors */
+.row.instructors {
+  background-color: white;
+}
+
+.instructors .cards .card {
+  border: 1px solid var(--light-gray-color);
+}

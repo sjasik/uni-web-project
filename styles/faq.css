@@ -1,0 +1,189 @@
+/* Page hero */
+.page-hero {
+  min-height: 600px;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-hero .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-hero h1.title {
+  font-size: 72px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.page-hero h4.subtitle {
+  color: white;
+}
+
+/* Responsive images/videos */
+.faqs img,
+.faqs video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Text */
+.faqs h2,
+.faqs h3 {
+  color: var(--dark-blue-color);
+}
+
+/* Faqs */
+.row.faqs {
+  background-color: var(--light-blue-color);
+}
+
+.faqs section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  text-align: left;
+}
+
+.faqs .founder {
+  grid-column: span 1;
+  text-align: center;
+  background-color: white;
+  padding: 48px;
+}
+
+.faqs .founder img {
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.faqs .founder small {
+  color: var(--orange-color);
+  font-weight: bold;
+}
+
+.faqs .founder p {
+  margin-top: 16px;
+}
+
+.faqs .faq {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: white;
+  padding: 48px;
+}
+
+.faqs .faq .accordion {
+  margin-top: 24px;
+}
+
+.accordion button[aria-expanded="true"] .accordion-title {
+  color: var(--orange-color);
+}
+
+.faqs .contact {
+  grid-column: span 1;
+  background-color: white;
+  padding: 48px;
+}
+
+.faqs .contact form {
+  margin-top: 12px;
+}
+
+.faqs .contact form input,
+.faqs .contact form textarea {
+  width: -webkit-fill-available;
+  margin-top: 12px;
+  cursor: pointer;
+  padding: 16px 24px;
+  font-weight: bold;
+  color: var(--dark-blue-color);
+  background-color: unset;
+  text-decoration: none;
+  border: 2px solid var(--gray-color);
+}
+
+.faqs .contact form button {
+  margin-top: 24px;
+  cursor: pointer;
+  padding: 16px 24px;
+  width: 100%;
+  font-weight: bold;
+  color: white;
+  background-color: var(--orange-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+}
+
+@media (max-width: 992px) {
+  .faqs .founder {
+    grid-column: span 3;
+  }
+  .faqs .faq {
+    grid-column: span 3;
+  }
+  .faqs .contact {
+    grid-column: span 3;
+  }
+}
+
+/* Build a career */
+.build-career {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+}
+
+.build-career .left,
+.build-career .right {
+  grid-column: span 1;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #0e1851;
+  color: var(--gray-color);
+  padding-right: 64px;
+  padding-left: 64px;
+}
+
+.build-career .right {
+  background-color: #000846;
+}
+
+.build-career .left > div,
+.build-career .right > div {
+  max-width: 506px;
+}
+
+.build-career .left > div {
+  margin-left: auto;
+}
+
+.build-career .right h1.title,
+.build-career .left h1.title,
+.build-career .right h4.subtitle,
+.build-career .left h4.subtitle {
+  color: white;
+}
+
+.build-career .left button,
+.build-career .right button {
+  margin-top: 24px;
+  cursor: pointer;
+  padding: 16px 24px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--blue-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2rem;
+}
+
+.build-career .left button {
+  background-color: var(--orange-color);
+}

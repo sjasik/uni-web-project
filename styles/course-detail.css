@@ -1,0 +1,214 @@
+/* Page hero */
+.page-hero {
+  min-height: 600px;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-hero .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-hero h1.title {
+  font-size: 72px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.page-hero h4.subtitle {
+  color: white;
+}
+
+/* Responsive images/videos */
+.course-detail img,
+.course-detail video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Course detail */
+.course-detail section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.course-detail section .detail {
+  grid-column: span 2;
+  text-align: left;
+  color: var(--gray-color);
+}
+
+.course-detail section .detail .stars {
+  color: var(--orange-color);
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.course-detail section .detail h1 {
+  color: var(--dark-blue-color);
+  font-weight: bold;
+}
+
+.course-detail section .detail h3 {
+  color: var(--dark-blue-color);
+  margin-top: 16px;
+}
+
+.course-detail section .detail .lessons {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.course-detail section .detail .lessons ul {
+  list-style: none;
+  border: 1px solid var(--light-gray-color);
+}
+
+.course-detail section .detail .lessons ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--light-gray-color);
+  padding: 8px 24px 8px 24px;
+}
+
+.course-detail section .detail .lessons ul li:hover {
+  background-color: var(--light-blue-color);
+}
+
+.course-detail section .detail .lessons ul li:last-child {
+  border-bottom: none;
+}
+
+.course-detail section .detail .lessons ul li span {
+  font-weight: bold;
+  color: var(--dark-blue-color);
+}
+
+.course-detail section .detail .lessons ul li div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.course-detail section .detail .lessons ul li div img {
+  margin-right: 8px;
+}
+
+.course-detail section .detail .accordion {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.course-detail section .detail .accordion-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.course-detail section .detail .accordion-content img {
+  margin-right: 16px;
+}
+
+.course-detail .instructors {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.course-detail .instructors .instructor {
+  grid-column: span 1;
+  border: 1px solid var(--light-gray-color);
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.course-detail .instructors .instructor img {
+  max-width: 96px;
+}
+
+.course-detail .instructors .instructor h4 {
+  color: var(--dark-blue-color);
+  margin-top: 8px;
+}
+
+/* Aside */
+.course-detail section aside {
+  grid-column: span 1;
+}
+
+.course-detail section aside .details ul {
+  list-style: none;
+  border: 1px solid var(--light-gray-color);
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.course-detail section aside .details ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--light-gray-color);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: var(--orange-color);
+  font-weight: bold;
+}
+
+.course-detail section aside .details ul li:last-of-type {
+  border-bottom: none;
+}
+
+.course-detail section aside .details ul li span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--dark-blue-color);
+}
+
+.course-detail section aside .details ul li span img {
+  margin-right: 8px;
+}
+
+.course-detail section aside .details ul button {
+  margin-top: 24px;
+  cursor: pointer;
+  padding: 16px 24px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--blue-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2rem;
+}
+
+@media (max-width: 992px) {
+  .course-detail section .detail {
+    grid-column: span 3;
+  }
+  .course-detail section aside {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 576px) {
+  .course-detail .instructors .instructor {
+    padding: 16px;
+  }
+}
+
+.accordion button[aria-expanded="true"] + .accordion-content {
+  max-height: fit-content;
+}

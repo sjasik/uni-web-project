@@ -1,0 +1,215 @@
+/* Page hero */
+.page-hero {
+  min-height: 600px;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-hero .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-hero h1.title {
+  font-size: 72px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.page-hero h4.subtitle {
+  color: white;
+}
+
+/* Responsive images/videos */
+.about-instructor img,
+.about-instructor video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Text */
+.about-instructor h2,
+.about-instructor h3 {
+  color: var(--dark-blue-color);
+}
+
+/* About instructor */
+.row.about-instructor {
+  background-color: var(--light-blue-color);
+}
+
+.about-instructor section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+}
+
+.about-instructor .profile {
+  grid-column: span 5;
+  background-color: white;
+  color: var(--gray-color);
+  text-align: left;
+}
+
+.about-instructor .profile .description {
+  padding: 24px;
+  width: auto;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about-instructor .profile .description p {
+  margin-bottom: 16px;
+}
+
+.about-instructor .profile .description .icons {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.about-instructor .profile .description .icons img {
+  margin-right: 4px;
+}
+
+.about-instructor .profile .description .social {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  height: fit-content;
+}
+
+.about-instructor .about-me {
+  grid-column: span 7;
+  background-color: white;
+  color: var(--gray-color);
+  text-align: left;
+  padding: 48px;
+}
+
+.about-instructor .about-me p {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.about-instructor .about-me .twosides {
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.about-instructor .about-me .twosides div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-color);
+}
+
+.about-instructor .about-me .twosides div img {
+  margin-right: 8px;
+}
+
+.about-instructor .about-me .twosides div span {
+  color: var(--orange-color);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.about-instructor .about-me .twosides .vertical-line {
+  background-color: var(--gray-color);
+  width: 4px;
+  height: 48px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.about-instructor .certification {
+  grid-column: span 7;
+  background-color: white;
+  color: var(--gray-color);
+  text-align: left;
+  padding: 48px;
+}
+
+.about-instructor .certification p {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.about-instructor .certification .photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.about-instructor .education-experience {
+  grid-column: span 5;
+  background-color: white;
+  color: var(--gray-color);
+  text-align: left;
+  padding: 48px;
+}
+
+.education-experience h2 {
+  margin-bottom: 16px;
+}
+
+.education-experience h2:nth-of-type(2) {
+  margin-top: 24px;
+}
+
+.education-experience .education,
+.education-experience .education div,
+.education-experience .experience,
+.education-experience .experience div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.education-experience .education div img,
+.education-experience .experience div img {
+  margin-right: 8px;
+}
+
+.education-experience .education div span,
+.education-experience .experience div span {
+  color: var(--dark-blue-color);
+}
+
+@media (max-width: 992px) {
+  .about-instructor .profile {
+    grid-column: span 12;
+  }
+  .about-instructor .about-me {
+    grid-column: span 12;
+  }
+  .about-instructor .certification {
+    grid-column: span 12;
+  }
+  .about-instructor .education-experience {
+    grid-column: span 12;
+  }
+}
+
+/* Courses */
+.row.courses {
+  background-color: white;
+}
+
+.courses h2 {
+  margin-bottom: 24px;
+}
+
+.courses .cards .card {
+  border: 1px solid var(--light-gray-color);
+}

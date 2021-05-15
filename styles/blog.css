@@ -1,0 +1,279 @@
+/* Page hero */
+.page-hero {
+  min-height: 600px;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-hero .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-hero h1.title {
+  font-size: 72px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.page-hero h4.subtitle {
+  color: white;
+}
+
+/* Responsive images/videos */
+.blog img,
+.blog video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Text */
+.blog h2,
+.blog h3 {
+  color: var(--dark-blue-color);
+}
+
+/* Blog - posts */
+.row.blog {
+  background-color: var(--light-blue-color);
+}
+
+.blog section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.blog .posts {
+  grid-column: span 2;
+  text-align: left;
+}
+
+.blog .posts .post {
+  background-color: white;
+  color: var(--gray-color);
+}
+
+.blog .posts .post:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+
+.blog .posts .post .description {
+  padding: 48px;
+}
+
+.blog .posts .post .description h2 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.blog .posts .post .description .icons {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* flex-wrap: wrap; */
+}
+
+.blog .posts .post .description .icons div {
+  display: flex;
+  margin-right: 16px;
+}
+
+.blog .posts .post .description .icons div img {
+  margin-right: 4px;
+  height: fit-content;
+}
+
+.blog .posts .post .description button {
+  margin-top: 16px;
+  cursor: pointer;
+  padding: 16px 24px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--orange-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+}
+
+.blog .posts .post.highlight {
+  background-color: var(--blue-color);
+  color: white;
+  padding: 48px;
+}
+
+.blog .posts .post.highlight h2 {
+  color: white;
+  margin-bottom: 24px;
+}
+
+.blog .posts .post.highlight .author {
+  display: flex;
+  align-items: center;
+}
+
+.blog .posts .post.highlight .author div {
+  width: 48px;
+  height: 4px;
+  background-color: white;
+  margin-right: 16px;
+}
+
+@media (max-width: 992px) {
+  .blog .posts {
+    grid-column: span 3;
+  }
+}
+
+/* Blog - aside */
+.blog aside {
+  display: grid;
+  gap: 24px;
+  text-align: left;
+  grid-auto-rows: min-content;
+}
+
+.blog aside h2 {
+  margin-bottom: 16px;
+}
+
+.blog aside .search,
+.blog aside .news,
+.blog aside .gallery,
+.blog aside .tags {
+  background-color: white;
+  padding: 24px;
+}
+
+.blog aside .search .input-group {
+  position: relative;
+}
+
+.blog aside .search .input-group i {
+  position: absolute;
+  right: 24px;
+  top: 30%;
+  color: var(--orange-color);
+}
+
+.blog aside .search .input-group input {
+  width: -webkit-fill-available;
+  cursor: pointer;
+  padding: 16px 24px;
+  font-weight: bold;
+  color: var(--dark-blue-color);
+  background-color: #f5f6fa;
+  text-decoration: none;
+  border: none;
+  border-radius: 2rem;
+}
+
+.blog aside .links ul {
+  list-style: none;
+}
+
+.blog aside .links li {
+  background-color: white;
+  padding: 16px 24px;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog aside .links li:hover {
+  background-color: var(--orange-color);
+}
+
+.blog aside .links li:hover a,
+.blog aside .links li:hover i {
+  color: white;
+}
+
+.blog aside .links li a {
+  color: var(--dark-blue-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blog aside .links li i {
+  color: var(--dark-blue-color);
+}
+
+.blog aside .news ul {
+  list-style: none;
+}
+
+.blog aside .news ul li:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+.blog aside .news ul li a {
+  text-decoration: none;
+  color: var(--gray-color);
+  display: flex;
+  flex-direction: row;
+}
+
+.blog aside .news ul li a img {
+  margin-right: 16px;
+}
+
+.blog aside .news ul li a span {
+  color: var(--dark-blue-color);
+  font-weight: bold;
+}
+
+.blog aside .news ul li a small i {
+  color: var(--orange-color);
+}
+
+.blog aside .gallery .photos {
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.blog aside .gallery .photos img {
+  grid-column: span 1;
+}
+
+.blog aside .tags ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog aside .tags ul li {
+  background-color: white;
+  padding: 8px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  box-shadow: 8px 12px 24px #f5f6fa;
+}
+
+.blog aside .tags ul li.active,
+.blog aside .tags ul li.active a {
+  background-color: var(--orange-color);
+  color: white;
+}
+
+.blog aside .tags ul li a {
+  text-decoration: none;
+  color: var(--gray-color);
+}
+
+.blog aside .ad img {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .blog aside {
+    grid-column: span 3;
+  }
+}
